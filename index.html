@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <!-- font awesome icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Find Another Meaning</title>
+  </head>
+  <body>
+    <header class="h-container">
+      <i class="fas fa-search"></i>
+      <span class="head-title">WORD FIND</span>
+    </header>
+
+    <section class="s-container">
+      <div class="input-div">
+        <form id="form-input">
+          <span class="input-anchor">
+            <i class="fa-solid fa-pen-nib"></i>
+          </span>
+          <input
+            type="text"
+            class="txt"
+            name="searched_word"
+            id=""
+            placeholder="Enter your word to find synonyms"
+          />
+          <button class="search-btn">
+            <i class="fas fa-search search-color"></i>
+          </button>
+        </form>
+      </div>
+
+      <div id="spinner">
+        <img
+          src="https://svgshare.com/i/gKg.svg"
+          alt=""
+          id="spin"
+          style="display: none;"
+        />
+      </div>
+      <div id="words-list"></div>
+    </section>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>
